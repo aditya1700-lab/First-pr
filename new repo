@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOW ACADEMY - Tutoring for Classes 3-10</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ff9ff3, #54a0ff, #5f27cd);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        h1 {
+            font-family: 'Comic Neue', cursive;
+            font-size: 3em;
+            text-shadow: 0 0 10px #fff;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { text-shadow: 0 0 10px #fff; }
+            to { text-shadow: 0 0 20px #ff9ff3, 0 0 30px #54a0ff; }
+        }
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+        }
+        h2 {
+            font-family: 'Comic Neue', cursive;
+            color: #ffd700;
+            text-align: center;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        li {
+            margin: 10px 0;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        li:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, select, textarea, button {
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        button {
+            background: #ffd700;
+            color: #333;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: #ffed4e;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GLOW ACADEMY</h1>
+        <p>Unlock Your Potential with Magical Tutoring! 🌟</p>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to GLOW ACADEMY, where learning feels like an anime adventure! We offer personalized tutoring to help students shine in their studies. Our expert tutors make complex topics fun and engaging.</p>
+    </section>
+
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <h3>Classes 3-8: All Subjects</h3>
+        <ul>
+            <li>Mathematics: Building strong foundations with fun puzzles.</li>
+            <li>Science: Exploring the wonders of the world like a hero's quest.</li>
+            <li>English: Mastering language skills for epic storytelling.</li>
+            <li>Social Studies: Journeying through history and geography.</li>
+            <li>And more: Art, Music, and extracurricular fun!</li>
+        </ul>
+        <h3>Classes 9-10: Specialized Subjects</h3>
+        <ul>
+            <li>Mathematics: Advanced problem-solving for future geniuses.</li>
+            <li>Science: Diving into physics, chemistry, and biology.</li>
+            <li>Computer Science: Coding your way to innovation.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Ready to glow? Enroll today!</p>
+        <form id="contactForm">
+            <input type="text" placeholder="Student Name" required>
+            <select required>
+                <option value="">Select Class</option>
+                <option value="3">Class 3</option>
+                <option value="4">Class 4</option>
+                <option value="5">Class 5</option>
+                <option value="6">Class 6</option>
+                <option value="7">Class 7</option>
+                <option value="8">Class 8</option>
+                <option value="9">Class 9</option>
+                <option value="10">Class 10</option>
+            </select>
+            <input type="tel" placeholder="Contact Number" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 GLOW ACADEMY. All rights reserved. | Email: info@glowacademy.com | Phone: (123) 456-7890</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for reaching out! We\'ll get back to you soon. ✨');
+            // In a real site, you'd send this to a server (e.g., via fetch to an API).
+        });
+    </script>
+</body>
+</html>
